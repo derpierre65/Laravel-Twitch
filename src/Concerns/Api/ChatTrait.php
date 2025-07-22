@@ -220,7 +220,7 @@ trait ChatTrait
         return $this->post('chat/shoutouts', $parameters);
     }
 
-    public function sendShoutout(array $parameters = []): Result
+    public function sendChatMessage(array $parameters = []): Result
     {
         $this->validateRequired($parameters, ['broadcaster_id', 'sender_id', 'message']);
 
